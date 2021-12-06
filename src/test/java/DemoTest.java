@@ -4,6 +4,7 @@ import io.qameta.allure.Allure;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class DemoTest {
     @Test
@@ -21,5 +22,10 @@ public class DemoTest {
     @Test
     public void demo3(){
         assertThat(2,equalTo(2));
+    }
+
+    @Test
+    public void evnTest(){
+        assertEquals(1,3,"实际值与预期结果不符");
     }
 }
